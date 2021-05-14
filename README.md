@@ -31,8 +31,12 @@ root                    (project root folder)
 
 ## Required Technologies
 ---
-* Python 3.8.0
+* Python 3.8.5
 
-## Authors
+## 
 ---
 * TODO: Add your names and emails here
+Jared Vance jaredkvance@gmail.com
+Brandon Densmore densmorebrandon@gmail.com
+Shandler Rechenberger ShanRechenberger@gmail.com
+Alex Mudaliar awsmudaliar@outlook.com
