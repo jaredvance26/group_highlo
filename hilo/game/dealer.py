@@ -8,7 +8,7 @@ class dealer:
 
 
 
-    def points(self):
+    def get_points(self):
         points = self.points
         card_two = self.card_two
         card_one = self.card_one
@@ -51,7 +51,8 @@ class dealer:
         
         print(f'Your new amount of points: {points}')
         
-        return points
+        self.points = points
+        return self.points
 
     def first_card(self):
         """ Random card number generator. Pulling the card """
@@ -62,12 +63,11 @@ class dealer:
     def second_card(self):
         """ Random card number generator. Pulling the card """
         self.card_two = random.randint(1,13)
-        print(f'Your card is {self.card_two}')
         return self.card_two
 
     def test_points():
         """ This is tests if the user is able to keep playing. """
-        
+
     
 
 
