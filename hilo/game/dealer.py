@@ -24,12 +24,15 @@ class dealer:
                 print()
                 print(f'The card is {card_two}. + 100 points')
                 points += 100
+                print('Wow, you are good!')
             
 
             elif card_two < card_one:
                 print()
                 print(f'The card is {card_two}. -75 points')
                 points = points - 75
+                print('Nice try sucker!')
+                print('https://www.memecreator.org/static/images/memes/4878271.jpg')
        
 
         elif question.lower() == 'l':
@@ -38,11 +41,17 @@ class dealer:
                 print()
                 print(f'The card is {card_two}. + 100 points')
                 points += 100
+                print('You are the bomb.com!')
+                print()
 
             elif card_two > card_one:
                 print()
                 print(f'The card is {card_two}. -75 points.')
                 points = points - 75
+                print('Nice try sucker!')
+                print('Click link')
+                print('https://www.memecreator.org/static/images/memes/4878271.jpg')
+                print()
             
             
         else: 

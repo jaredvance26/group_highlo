@@ -1,5 +1,6 @@
 from game.dealer import dealer
 
+
 class Director:
     """A code template for a person who directs the game. The responsibility of 
     this class of objects is to keep track of the score and control the 
@@ -38,6 +39,7 @@ class Director:
         self.dealer.second_card()
         self.dealer.get_points()
         self.answer = input('Keep playing? [y/n] ')
+        print(chr(27) + "[2J")
 
         if self.dealer.points == 0 or self.answer.lower() == 'n':
             print('Game Over')
