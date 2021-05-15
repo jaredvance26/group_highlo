@@ -1,4 +1,9 @@
 import random
+from PIL import Image
+
+lose_pic = Image.open('loser.jpeg')
+win_pic = Image.open('winner.jpeg')
+
 
 class dealer:
     def __init__(self):
@@ -25,14 +30,14 @@ class dealer:
                 print(f'The card is {card_two}. + 100 points')
                 points += 100
                 print('Wow, you are good!')
-            
+                win_pic.show()
 
             elif card_two < card_one:
                 print()
                 print(f'The card is {card_two}. -75 points')
                 points = points - 75
                 print('Nice try sucker!')
-                print('https://www.memecreator.org/static/images/memes/4878271.jpg')
+                lose_pic.show()
        
 
         elif question.lower() == 'l':
@@ -43,6 +48,7 @@ class dealer:
                 points += 100
                 print('You are the bomb.com!')
                 print()
+                win_pic.show()
 
             elif card_two > card_one:
                 print()
@@ -50,7 +56,7 @@ class dealer:
                 points = points - 75
                 print('Nice try sucker!')
                 print('Click link')
-                print('https://www.memecreator.org/static/images/memes/4878271.jpg')
+                lose_pic.show()
                 print()
             
             
